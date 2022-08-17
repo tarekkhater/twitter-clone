@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import styles from '../styles/Article.module.css'
+import Image from 'next/image';
+import Link from 'next/link';
 export default function Articles({articles}) {
     var [slices, setSlices] = useState(3);
   return (
@@ -15,7 +17,7 @@ export default function Articles({articles}) {
               <p>{article.title}</p>         
             </div>
             <div className="col-2" id={styles.image}>
-               <img src={article.urlToImage} alt=''  />
+               <Image src={article.urlToImage} alt=''  />
             </div>
             
           </div> 

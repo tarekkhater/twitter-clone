@@ -22,7 +22,7 @@ function Sidebar() {
   return (
     <div className={styles.container}>
       {show? (<div> <button className="btn btn-info" id={styles.tweet} onClick={() => setShow(false)} >Sign in</button> </div>) : 
-      (<div><img className={styles.logo} src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png' alt='logo'  />
+      (<div><Image className={styles.logo} src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png' alt='logo'  />
       <div className="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <p className="nav-link  " id={styles.home} data-bs-toggle="pill"  type="button"   ><i className="bi bi-house-door-fill"></i>&nbsp; Home</p>
           <p className="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"  type="button"   ><i className="bi bi-hash"></i>&nbsp; Explore</p>
