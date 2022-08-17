@@ -1,0 +1,139 @@
+.conatinerr{
+    width:100%;
+    border:1px solid lightgray;
+    padding:5px;
+    border-top:none;
+}
+.container{
+    border-top:1px solid lightgray;
+    width:100%;
+    display:inline-flex;
+   
+}
+
+#feed{
+    width:100%;
+    display:inline-flex;
+    padding:5px;
+}
+.feed{
+    padding:6px;
+    
+}
+.feed img{
+    margin:0px 10px 5px 12px;
+    padding:1px;
+    border-radius:28px;
+    
+}
+.postImg{
+    width:100%;
+    height:290px;
+}
+.username{
+    font-size:17px;
+    font-weight: 700;
+    padding-left:-20px;
+    margin-top:-10px;
+    
+}
+.feed p{
+    margin:-25px 0 20px 70px;
+}
+.text{
+    margin-top:-52px;
+    margin-left:-9px;
+}
+.emaill{
+    font-size:15px;
+}
+#tweet{
+    padding-left:10px;
+    
+}
+.image{
+    margin:-10px 1px 5px 52px;
+}
+ 
+
+.row span{
+    font-size: 20px;
+    margin-left:80px;
+    
+}
+#comments:hover{
+    color:red;
+}
+@media screen and (max-width:760px) {
+    .conatinerr{
+        padding:2px 0px 0 0;
+        border-top:none;
+        
+    }
+    .container{
+        width:100%;
+    }
+    #feed{
+        padding:2px 0.5px;
+    }
+    .feed{
+        padding:2px 0px 1px 0px;
+        border-bottom: none;
+       
+    }
+        .feed img{
+            margin:0px 5px 5px 12px;
+            padding:1px;
+            border-radius:28px;
+            
+        }
+        .postProfile img{
+            width:35px;
+            height:35px;
+        }
+        .postImg{
+            width:99.5%;
+            height:140px;
+            margin-left:0;
+            padding-left:0;
+        }
+        .username{
+            font-size:12px;
+            padding-left:2px;
+            margin-top:0px;
+            
+        }
+        .feed p{
+            margin:-23px 0 20px 50px;
+            
+        }
+        .text{
+            margin-top:-35px;
+            margin-left:-12px;
+        }
+        .emaill{
+            font-size:9.8px;
+            padding-left:2px;
+        }
+        #tweet{
+            padding-left:5px;
+            
+        }
+        .image{
+            margin:-15px 1px 0px 11px;
+        }
+         
+        
+        .row span{
+            font-size: 14px;
+            margin-left:24px;
+            color:blue;
+            
+        }
+        .row{
+            margin-bottom:-13px;
+           
+        }
+       
+    }
+
