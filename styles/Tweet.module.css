@@ -62,22 +62,23 @@
         border-top:none;
     }
     .container h5{
-        padding:2px 4px 6px 4px;
+        padding:4px 4px 6px 4px;
         border-bottom: 1px solid lightgray;
-        font-size: 16px;
+        font-size: 13.5px;
     }
     .post{
         margin-top:-28px;
         height:120px;
         width:90%;
-        margin-left:25px;
-        font-size:15.5px;
+        margin-left:20px;
+        font-size:13.5px;
         font-weight: 450;
         padding-left:12px;
+        
     }
     #imge{
-        width:28px;
-        height:28px;
+        width:25px;
+        height:25px;
     }
     #tweet{
     padding-top:5px;  
@@ -86,17 +87,22 @@
 
 #btn{
     float: right;
-    margin-right:-12px;
+    margin-right:-8px;
     border-radius: 14px;
-    padding:1px 11px;
-    font-size:13px;
+    padding:1px 6px;
+    margin-top:2px;
+    font-size:11px;
 }
 #emoji{
     
-    font-size:15px;
-   
+    font-size:13px;
 }
+
 #emoji:first-child{
-    margin-left:20px;
+    margin-left:15px;
+}
+.emoji{
+    margin-bottom:-10px;
+    
 }
 }

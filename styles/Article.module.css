@@ -61,10 +61,10 @@
 @media screen and (max-width:760px) {
     .container{
         padding-top:10px;
-        margin-left:-10px;
+        margin-left:-7px;
         padding:0;
         width:100%;
-        position: relative;
+       
     }
     #Search{
         font-size:8px;
@@ -74,8 +74,8 @@
     }
     .article img{
     border-radius: 5px;
-    margin-top:-12px;
-    margin-left:26px;
+    margin-top:-22px;
+    margin-left:35px;
     width:98%;
     height:30px;
 }

@@ -9,7 +9,7 @@ export default function Feeds({feeds}) {
     var {profileImgInput , username , email , time} = useSelector(state => state.info)
     const feedss  = feeds.map((feed)=> (
         <div key={feed.title} className={styles.feed}> 
-           <div>
+           <div className={styles.profile}>
             <span className={styles.postProfile}>{profileImgInput}</span>
                 <div className={styles.text}>
                     <p className={styles.username}>{username}</p>
@@ -24,8 +24,8 @@ export default function Feeds({feeds}) {
                 <span id={styles.comments} ><i  className="bi bi-trash3"></i></span>
                 <span id={styles.comments}> <i  className="bi bi-heart"></i></span>
                 <span id={styles.comments}><i  className="bi bi-share"></i></span>
-                <hr />
             </div>
+            <hr />
             </div>
             
         </div>
@@ -34,8 +34,9 @@ export default function Feeds({feeds}) {
         );
   return (
     <div className={styles.conatinerr}>
-     <div className="row" id={styles.tweet}> <Tweet /></div>
+     <div className="row" id={styles.tweet}> <Tweet /> </div>
       <div className={styles.container}>
+     
         <div className="row" id={styles.feed}>
             {feedss}
         </div> 

@@ -19,13 +19,14 @@ function Tweet() {
             </div>
             <div className="col-11" >
                 <textarea className={styles.post} placeholder=" What's happenning"></textarea>
-                <div >
+                <div className={styles.emoji}>
                 &nbsp;<i id={styles.emoji} className="bi bi-images"></i>&nbsp; &nbsp;<i id={styles.emoji} className="bi bi-emoji-smile"></i>
                 <button type="button"id={styles.btn} className="btn btn-primary">Tweet</button>
                 </div>
+                <hr />
             </div>
        </div>
-
+      
     </div>
   )
 }
