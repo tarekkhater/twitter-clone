@@ -2,14 +2,13 @@ import styles from '../styles/Home.module.css';
 import Widget from '../component/Widget';
 import Feeds from '../component/Feeds';
 import Sidebar from '../component/Sidebar';
-import {useSession} from 'next-auth/react'
+import {useSession , SessionProvider } from 'next-auth/react'
 import Link from 'next/link';
 
-  
-  
 export default function index({feeds , News , users}) {
   const {data:session} = useSession();
   return (
+    <SessionProvider>
     <div className={styles.container} >
       {session ? (
         <div className='row'>
@@ -26,6 +25,7 @@ export default function index({feeds , News , users}) {
       )}
      
     </div>
+    </SessionProvider>
   )
 }
 

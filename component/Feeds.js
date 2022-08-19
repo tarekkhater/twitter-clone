@@ -3,9 +3,9 @@ import { useSelector } from "react-redux";
 import styles from '../styles/Feeds.module.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-
+import {useSession } from 'next-auth/react'
 export default function Feeds({feeds}) {
- 
+  const {data:session} = useSession();
     var {profileImgInput , username , email , time} = useSelector(state => state.info)
     const feedss  = feeds.map((feed)=> (
         <div key={feed.title} className={styles.feed}> 

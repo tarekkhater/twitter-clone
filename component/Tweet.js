@@ -5,7 +5,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import {useSession } from 'next-auth/react'
 
 function Tweet() {
-  
+     const {data:session} = useSession();
     const profileImge = useSelector(state => state.info.profileImgInput)
   return (
     <div className={styles.container}>
@@ -16,7 +16,7 @@ function Tweet() {
        </div>
        <div className="row" id={styles.tweet}>
             <div className="col-1">
-            <img src={profileImge} />     
+            <img src={session.user.image}  id={styles.imge}/>     
             </div>
             <div className="col-11" >
                 <textarea className={styles.post} placeholder=" What's happenning"></textarea>

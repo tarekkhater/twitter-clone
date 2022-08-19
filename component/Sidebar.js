@@ -28,8 +28,8 @@ function Sidebar() {
           <p className="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"  type="button"   ><i className="bi bi-envelope"></i>&nbsp; Messages</p>
           <p className="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"  type="button"   ><i className="bi bi-bookmark"></i>&nbsp; Bookmarks</p>
           <p className="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"  type="button"   ><i className="bi bi-person"></i>&nbsp; Profile</p>
-          <p className="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"  type=" button" onClick={()=>signOut()} ><i className="bi bi-gear" ></i>&nbsp; Sign out</p>
-          <button className="btn btn-info" id={styles.tweet} >Tweet</button>
+          <p className="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"  type=" button"  ><i className="bi bi-gear" ></i>&nbsp; Settings </p>
+          <button className="btn btn-info" id={styles.tweet} onClick={()=>signOut()} >Sign out</button>
       </div>
       <div className={styles.prof}> 
         <img src={session.user.image} alt='' className={styles.imge}  />

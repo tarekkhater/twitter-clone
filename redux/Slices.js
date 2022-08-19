@@ -2,7 +2,6 @@ import { createSlice } from "@reduxjs/toolkit";
 import styles from '../styles/Sidebar.module.css'
 import styless from '../styles/Tweet.module.css'
 
-
 const slice = createSlice({
     name: "Slice1",
     initialState:{
