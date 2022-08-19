@@ -17,7 +17,7 @@ export default function Articles({articles}) {
               <p>{article.title}</p>         
             </div>
             <div className="col-2" id={styles.image}>
-               <Image src={article.urlToImage} alt=''  />
+               <img src={article.urlToImage} alt=''  />
             </div>
             
           </div> 

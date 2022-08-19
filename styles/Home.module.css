@@ -1,11 +1,29 @@
 .container {
   padding:0 ;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
+#sign{
+  font-size: 22px;
+  font-weight:500;
+  margin:240px 0 366px 300px;
+  padding:8px 10px;
+  border-radius: 15px;
+  
+}
+.logo{
+  width:90px;
+  height:90px;
+  margin:-400px 90px 0 250px;
+}
 
-
-
+#contain{
+  background-image:url("https://cdn.cms-twdigitalassets.com/content/dam/help-twitter/en/twitter-tips/desktop-assets/ch-01/ch12findphone.png.twimg.1920.png");
+  color:white;
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position-x: 150px;
+}
 @media (max-width: 760px) {
   .container{
     overflow-x: hidden;
@@ -22,6 +40,29 @@
     width:30%;
     margin-right:0;
     padding-right: 0;
+  }
+  #sign{
+    font-size: 17px;
+    font-weight:500;
+    margin:350px 0px 50px 10px;
+    padding:8px 10px;
+    border-radius: 15px;
+  }
+  .logo{
+    width:50px;
+    height:50px;
+    margin:50px 20px 0 0px;
+  }
+  
+  #contain{
+    padding:50px;
+    width: 100%;
+    background-image:url("https://cdn.cms-twdigitalassets.com/content/dam/help-twitter/en/twitter-tips/desktop-assets/ch-01/ch12findphone.png.twimg.1920.png");
+    color:white;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-x: center;
+    background-position-y: center;
   }
 }
 

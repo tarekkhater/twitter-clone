@@ -1,6 +1,5 @@
 import styles from '../styles/RandomProfiles.module.css';
 import { useState } from 'react';
-import Image from 'next/image';
  function RandomProfiles({profiles}) {
     const [slices , setSlices] =  useState(3);
   return (
@@ -11,7 +10,7 @@ import Image from 'next/image';
       {profiles.slice(0,slices).map((profile)=>(
         <div key={profile.login.username} className={styles.user}>
            <button className={styles.followBtn} >Follow</button>
-           <Image src={profile.picture.thumbnail} width='' height='' className={styles.imgProfile} />
+           <img src={profile.picture.thumbnail} width='' height='' className={styles.imgProfile} />
                 <div className={styles.text}>
                     <h4>{profile.name.first + " " +profile.name.last}</h4>
                     <h6>@{profile.login.username}</h6>

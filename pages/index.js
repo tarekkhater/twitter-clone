@@ -2,16 +2,28 @@ import styles from '../styles/Home.module.css';
 import Widget from '../component/Widget';
 import Feeds from '../component/Feeds';
 import Sidebar from '../component/Sidebar';
+import {useSession} from 'next-auth/react'
 
+  
+  
 export default function index({feeds , News , users}) {
- 
+  const {data:session} = useSession();
   return (
     <div className={styles.container} >
-      <div className='row'>
+      {session ? (
+        <div className='row'>
        <div className='col-4' id={styles.Sidebar}><Sidebar /></div> 
        <div className='col-5' id={styles.Feeds}><Feeds feeds={feeds.articles} /></div>
        <div className='col-3' id={styles.Widget}><Widget articles={News.articles} profiles={users.results} /></div>
       </div>
+      ) 
+      : (
+         <div  id={styles.contain}>
+        <img className={styles.logo} src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png' alt='logo'  />
+         <a href="/signin"> <button className="btn btn-primary" id={styles.sign} > Please sign in to go to your account </button></a>
+      </div>
+      )}
+     
     </div>
   )
 }
