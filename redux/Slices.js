@@ -1,8 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import styles from '../styles/Sidebar.module.css'
 import styless from '../styles/Tweet.module.css'
-import { useSession } from 'next-auth/react'
-import Image from "next/image";
+
 
 const slice = createSlice({
     name: "Slice1",

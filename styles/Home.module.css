@@ -16,6 +16,11 @@
   height:90px;
   margin:-400px 90px 0 250px;
 }
+#sign a{
+  color:white;
+  text-decoration:none;
+  
+}
 
 #contain{
   background-image:url("https://cdn.cms-twdigitalassets.com/content/dam/help-twitter/en/twitter-tips/desktop-assets/ch-01/ch12findphone.png.twimg.1920.png");
@@ -47,7 +52,9 @@
     margin:350px 0px 50px 10px;
     padding:8px 10px;
     border-radius: 15px;
+    color:white;
   }
+  
   .logo{
     width:50px;
     height:50px;

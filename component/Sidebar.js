@@ -3,7 +3,6 @@ import {  useState } from 'react';
 import styles from '../styles/Sidebar.module.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { useSelector } from 'react-redux';
-import Image from 'next/image';
 import {useSession , signOut} from 'next-auth/react'
 import { useEffect } from 'react';
 function Sidebar() {

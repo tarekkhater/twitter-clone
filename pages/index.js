@@ -3,6 +3,7 @@ import Widget from '../component/Widget';
 import Feeds from '../component/Feeds';
 import Sidebar from '../component/Sidebar';
 import {useSession} from 'next-auth/react'
+import Link from 'next/link';
 
   
   
@@ -20,7 +21,7 @@ export default function index({feeds , News , users}) {
       : (
          <div  id={styles.contain}>
         <img className={styles.logo} src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png' alt='logo'  />
-         <a href="/signin"> <button className="btn btn-primary" id={styles.sign} > Please sign in to go to your account </button></a>
+          <button className="btn btn-primary" id={styles.sign} ><Link href="/signin" > Please sign in to go to your account </Link></button>
       </div>
       )}
      
