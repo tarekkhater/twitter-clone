@@ -5,12 +5,11 @@ import {SessionProvider} from 'next-auth/react'
 
 function MyApp({ Component, pageProps :{session , ...pageProps} }) {
   return  (
-    <Provider store={store}>
     <SessionProvider session={session}>
-      
+    <Provider store={store}>
       <Component {...pageProps} />
-      </SessionProvider>
     </Provider>
+    </SessionProvider>
   )
     
   
