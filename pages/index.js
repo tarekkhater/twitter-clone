@@ -7,7 +7,7 @@ import Link from 'next/link';
 import Comment from '../component/Comment';
 import Head from 'next/head';
 
-export default function Index({feeds , News , }) {
+export default function Index({feeds , News , users}) {
   const {data:session} = useSession();
   return (
     <SessionProvider>
@@ -20,7 +20,7 @@ export default function Index({feeds , News , }) {
         <div className='row'>
        <div className='col-4' id={styles.Sidebar}><Sidebar /></div> 
        <div className='col-5' id={styles.Feeds}><Feeds feeds={feeds.articles} /></div>
-       {/*<div className='col-3' id={styles.Widget}><Widget articles={News.articles} profiles={users.results} /></div>*/}
+       <div className='col-3' id={styles.Widget}><Widget articles={News.articles} profiles={users?.results} /></div>
        <Comment />
       </div>
       ) 
@@ -39,12 +39,12 @@ export default function Index({feeds , News , }) {
 export async function getServerSideProps(){
   const feeds = await fetch("https://saurav.tech/NewsAPI/top-headlines/category/health/in.json").then(res => res.json())
   const News = await fetch("https://saurav.tech/NewsAPI/everything/cnn.json").then(res => res.json())
-  //const users = await fetch("https://randomuser.me/api/?results=5000").then(res => res.json())
+  const users = await fetch("https://randomuser.me/api/?results=5000").then(res => res.json())
   return({
     props:{
       feeds : feeds,
       News : News,
-     // users: users,
+      users: users,
     }
   })
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../styles/Widget.module.css';
 import Article from './Article'
 import RandomProfiles from './RandomProfiles'
-export default function Widget({articles }) {
+export default function Widget({articles , profiles}) {
    
 
   return (
@@ -12,11 +12,11 @@ export default function Widget({articles }) {
             <Article  articles={articles} />
         </div>
       </div>
-      {/*<div className="row">
+      <div className="row">
         <div className="col">
             <RandomProfiles profiles ={profiles} />
         </div>
-  </div>*/}
+      </div>
     </div>
   )
 }
