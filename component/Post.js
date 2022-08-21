@@ -15,7 +15,7 @@ import { useRecoilState } from "recoil"
 import { modalState , PostIdState} from '../atom/modalAtom';
   
 
-export default function Post({feed , id}) {
+export default function Post({feed , id , key}) {
     const {data:session} = useSession();
     var [likes , setLikes] =useState([])
     var [comments , setComments] =useState([])
