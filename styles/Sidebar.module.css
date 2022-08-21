@@ -65,15 +65,15 @@
     }
     .container:first-child p{
         margin:2px 5px 2px 0px;
-        padding:8px 0 8px 5px;
+        padding:8px 0 8px 3px;
         font-weight: 400;
-        font-size:12px;
-        line-height:13px;
-        width:95%;
+        font-size:11px;
+        line-height:16px;
+        width:99%;
     }
     #tweet{
         width:90%;
-        margin:25px 5px 5px 5px;
+        margin:25px 5px 5px 12px;
         padding:5px -20px;
         border-radius: 20px;
         font-size:13px;

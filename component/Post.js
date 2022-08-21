@@ -71,7 +71,7 @@ export default function Post({feed , id}) {
                  {comments.length > 0 &&
                 <span className={styles.comment}>{comments.length}</span>
                }
-                {session?.user.id === id ? (
+                {session?.user.name === feed?.data().name ? (
                     <span id={styles.comments} ><i  className="bi bi-trash3" onClick={deletePost}></i></span>
                 )
                  :(

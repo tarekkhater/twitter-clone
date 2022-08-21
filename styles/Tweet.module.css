@@ -40,13 +40,12 @@
     
     font-size:20px;
     color:rgb(79, 163, 163);
+    margin-left:20px;
 }
 #emoji:hover{
     color:blue;
 }
-#emoji:first-child{
-    margin-left:20px;
-}
+
 #imge{
     width:46px;
     height:50px;
@@ -86,7 +85,7 @@
     }
     .post{
         margin-top:-28px;
-        height:120px;
+        height:70px;
         width:90%;
         margin-left:20px;
         font-size:13.5px;
@@ -114,11 +113,10 @@
 #emoji{
     
     font-size:13px;
+    margin-left:20px;
 }
 
-#emoji:first-child{
-    margin-left:15px;
-}
+
 .emoji{
     margin-bottom:-10px;
     
