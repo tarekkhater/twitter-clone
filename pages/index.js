@@ -20,7 +20,7 @@ export default function Index({feeds , News , }) {
         <div className='row'>
        <div className='col-4' id={styles.Sidebar}><Sidebar /></div> 
        <div className='col-5' id={styles.Feeds}><Feeds feeds={feeds.articles} /></div>
-       <div className='col-3' id={styles.Widget}><Widget articles={News.articles}  /></div>
+       {/*<div className='col-3' id={styles.Widget}><Widget articles={News.articles} profiles={users.results} /></div>*/}
        <Comment />
       </div>
       ) 
