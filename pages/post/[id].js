@@ -12,7 +12,7 @@ import styles from '../../styles/Home.module.css';
 import GetComments from "../../component/GetComments";
 
 
-export default function PostPage({feeds , News , users}) {
+export default function PostPage({feeds , News }) {
   const router = useRouter();
   const { id } = router.query;
   const [post, setPost] = useState();
@@ -66,7 +66,7 @@ export default function PostPage({feeds , News , users}) {
           )}
          </div>
         </div>
-       <div className='col-3' id={styles.Widget}><Widget articles={News?.articles} profiles={users?.results} /></div>
+       <div className='col-3' id={styles.Widget}><Widget articles={News?.articles}  /></div>
        <Comment />
       </div>
 
@@ -79,12 +79,12 @@ export default function PostPage({feeds , News , users}) {
 export async function getServerSideProps(){
   const feeds = await fetch("https://saurav.tech/NewsAPI/top-headlines/category/health/in.json").then(res => res.json())
   const News = await fetch("https://saurav.tech/NewsAPI/everything/cnn.json").then(res => res.json())
-  const users = await fetch("https://randomuser.me/api/?results=50").then(res => res.json())
+  //const users = await fetch("https://randomuser.me/api/?results=50").then(res => res.json())
   return({
     props:{
       feeds : feeds,
       News : News,
-      users: users,
+     // users: users,
     }
   })
 }

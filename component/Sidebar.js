@@ -19,7 +19,7 @@ function Sidebar() {
 
   return (
     <div className={styles.container}>
-      {session ? 
+      {session &&
       (<div><img className={styles.logo} src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png' alt='logo'  />
       <div className="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <p className="nav-link  " id={styles.home}      ><i className="bi bi-house-door-fill"></i>&nbsp; Home</p>
@@ -36,12 +36,7 @@ function Sidebar() {
         <h4 className={styles.username}>{session.user.name}</h4>
         <h6 className={styles.emaill}>{session.user.email}</h6>
         
-    </div></div>):
-     (<div>
-      <img className={styles.logo} src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png' alt='logo'  />
-      <p className="nav-link  " id={styles.home}    ><i className="bi bi-house-door-fill"></i>&nbsp; Home</p>
-       <p className="nav-link" id="v-pills-profile-tab"    ><i className="bi bi-hash"></i>&nbsp; Explore</p>
-      </div>) 
+    </div></div>)
     }
         
         
