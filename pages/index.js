@@ -8,7 +8,7 @@ import { useState } from 'react';
 import Comment from '../component/Comment';
 import Head from 'next/head';
 
-export default function index({feeds , News , users}) {
+export default function Index({feeds , News , users}) {
   const {data:session} = useSession();
   return (
     <SessionProvider>
