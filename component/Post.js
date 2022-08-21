@@ -48,7 +48,7 @@ export default function Post({feed , id , key}) {
   }
   return (
     <div>
-        <div key={id} className={styles.feed}> 
+        <div key={key} className={styles.feed}> 
            <div className={styles.profile}>
             <span className={styles.postProfile}><img src={feed?.data().profileImg} id={styles.imge} alt='' /></span>
                 <div className={styles.text}>
