@@ -39,7 +39,7 @@ export default function Index({feeds , News , users}) {
 export async function getServerSideProps(){
   const feeds = await fetch("https://saurav.tech/NewsAPI/top-headlines/category/health/in.json").then(res => res.json())
   const News = await fetch("https://saurav.tech/NewsAPI/everything/cnn.json").then(res => res.json())
-  const users = await fetch("https://randomuser.me/api/?results=5000").then(res => res.json())
+  const users = await fetch("https://randomuser.me/api/?results=1000").then(res => res.json())
   return({
     props:{
       feeds : feeds,
