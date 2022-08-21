@@ -29,6 +29,18 @@
   background-size:contain;
   background-position-x: 150px;
 }
+.tweet{
+  padding:5px 4px 0px 15px;
+}
+#arrow{
+  padding:0px 2px;
+  padding-right:0;
+  border-radius:55px;
+}
+#arrow:hover{
+  background-color: lightgray;
+  
+}
 @media (max-width: 760px) {
   .container{
     overflow-x: hidden;
@@ -70,6 +82,11 @@
     background-size:contain;
     background-position-x: center;
     background-position-y: center;
+  }
+  .tweet{
+    padding:4px 4px 0px 4px;
+    margin-bottom:-8px;
+    font-size: 13.5px;
   }
 }
 

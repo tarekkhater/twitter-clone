@@ -7,7 +7,7 @@ import { useState } from 'react';
         <br />
         <div className={styles.Div}>
         <h3>Who to follow</h3>
-      {profiles.slice(0,slices).map((profile)=>(
+      {profiles?.slice(0,slices).map((profile)=>(
         <div key={profile.login.username} className={styles.user}>
            <button className={styles.followBtn} >Follow</button>
            <img src={profile.picture.thumbnail} width='' height='' className={styles.imgProfile} />

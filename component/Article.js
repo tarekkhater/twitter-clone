@@ -8,11 +8,11 @@ export default function Articles({articles}) {
       <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" id={styles.Search} />
       <div className={styles.articles}>
         <h5>What's happenning</h5>
-       {articles.slice(0,slices).map((article)=> (
+       {articles?.slice(0,slices).map((article)=> (
       <div key={article.title} className={styles.article}>   
           <div className="row">
             <div className="col-10" id={styles.description}>
-              <p><Link  href={article.url} target="_blank">{article.title}</Link></p>         
+              <p><Link  href={article.url} target="_blank" rel="noreferrer">{article.title}</Link></p>         
             </div>
             <div className="col-2" id={styles.image}>
                <img src={article.urlToImage} alt=''  />

@@ -32,7 +32,7 @@ function Sidebar() {
           <button className="btn btn-info" id={styles.tweet} onClick={()=>signOut()} >Sign out</button>
       </div>
       <div className={styles.prof}> 
-        <img src={session.user.image} alt='' className={styles.imge}  />
+        <img src={session?.user.image} alt='' className={styles.imge}  />
         <h4 className={styles.username}>{session.user.name}</h4>
         <h6 className={styles.emaill}>{session.user.email}</h6>
         

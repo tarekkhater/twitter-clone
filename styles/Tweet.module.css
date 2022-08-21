@@ -13,16 +13,16 @@
 .post{
     margin-top:4px;
     height:140px;
-    width:100%;
+    width:96%;
     margin-left:5px;
     max-width:100%;
     font-size:20px;
     font-weight: 450;
     border: none;
     background-color: transparent;
-    resize: none;
     outline: none;
     border-bottom: 1px solid lightgray;
+    padding-left:10px;
 }
 #tweet{
     padding-top:7px;  
@@ -52,12 +52,30 @@
     height:50px;
     border-radius:30px;
 }
+#file{
+    display:none ;
+}
+.selectImage{
+    
+    margin:2px 2px 5px 30px;
+}
+.selectImage img{
+    width:80%;
+    
+}
+#remove{
+    position: absolute;
+    left:530px;
+    font-family: 'Bold';
+    font-size: large;
+    
+}
 @media screen and (max-width:760px) {
     .container{
         width:100%;
         max-width:100%;
         margin-left:0;
-        padding:2px 1px 5px 8px ;
+        padding:2px 0px 5px 8px ;
         border-left: none;
         border-top:none;
     }
@@ -82,12 +100,12 @@
     }
     #tweet{
     padding-top:5px;  
-     
+    
 }
 
 #btn{
     float: right;
-    margin-right:-8px;
+    margin-right:-2px;
     border-radius: 14px;
     padding:1px 6px;
     margin-top:2px;
@@ -103,6 +121,13 @@
 }
 .emoji{
     margin-bottom:-10px;
+    
+}
+#remove{
+    position: absolute;
+    left:143px;
+    font-size: 12px;
+    margin-top:-5px;
     
 }
 }
